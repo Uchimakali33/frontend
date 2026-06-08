@@ -1,6 +1,7 @@
 import { useState } from "react"
 import Navbar from "./component/Navbar/Navbar"
 import Hero from "./component/Navbar/Hero"
+import Feature from "./component/Navbar/Feature"
 import { useEffect } from "react";
 
 function App() {
@@ -15,9 +16,10 @@ function App() {
     },[theme])
     return (
         <>
-        <div className={`${bgcolor} transition duration-300 h-screen`}>
+        <div className={`${bgcolor} transition duration-300`}>
             <Navbar theme={theme} setTheme={setTheme}/>
             <Hero theme={theme} />
+            <Feature theme={theme}/>
             
         </div>
         </>
