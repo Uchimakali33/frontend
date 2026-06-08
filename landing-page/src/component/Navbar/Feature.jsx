@@ -13,9 +13,9 @@ function Feature({ theme }) {
         <h1 className={` text-center font-bold text-xl md:text-3xl my-3`}>Features</h1>
         <div className={`grid-cols-1 gap-3 md:grid-cols-3 pb-3 md:flex justify-evenly`}>
           <div
-            className={`border pb-3 ${bordercolor} shrink-0 md:shrink text-lg mb-5 md:text-xl rounded-lg`}
+            className={`border pb-3 ${bordercolor} md:grow shrink-0 md:shrink text-lg mb-5 md:text-xl rounded-lg`}
           >
-            <img className="md:w-100 w-150 h-50 md:h-80 rounded-lg mb-2" src={display} />
+            <img className="md:w-120 w-150 h-50 md:h-80 rounded-lg mb-2" src={display} />
             <h1 className="font-bold pb-2 pl-2 md:pl-4">Display</h1>
             <ul className="pl-6 text-md md:text-lg font-mono">
               <li>Amoled Display</li>
@@ -24,9 +24,9 @@ function Feature({ theme }) {
             </ul>
           </div>
           <div
-            className={`border ${bordercolor} shrink-0 md:shrink mb-5 text-lg md:text-xl rounded-lg`}
+            className={`border ${bordercolor} md:grow shrink-0 md:shrink mb-5 text-lg md:text-xl rounded-lg`}
           >
-            <img className="md:w-100 w-150 h-50 md:h-80 rounded-lg mb-2" src={camera} />
+            <img className="md:w-120 w-150 h-50 md:h-80 rounded-lg mb-2" src={camera} />
             <h1 className="font-bold pb-2 pl-2 md:pl-4">Camera</h1>
 
             <ul className="pl-6 text-md md:text-lg font-mono">
@@ -36,9 +36,9 @@ function Feature({ theme }) {
             </ul>
           </div>
           <div
-            className={`border ${bordercolor} shrink-0 md:shrink mb-5 text-lg md:text-xl rounded-lg`}
+            className={`border ${bordercolor} md:grow shrink-0 md:shrink mb-5 text-lg md:text-xl rounded-lg`}
           >
-            <img className="md:w-100 w-150 h-50 md:h-80 rounded-lg mb-2" src={processor} />
+            <img className="md:w-120 w-150 h-50 md:h-80 rounded-lg mb-2" src={processor} />
             <h1 className="font-bold pb-2 pl-2 md:pl-4">Processor</h1>
             <ul className="pl-6 text-md md:text-lg font-mono">
               <li>Octo Core Processor</li>

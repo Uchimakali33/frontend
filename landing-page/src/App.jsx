@@ -16,7 +16,7 @@ function App() {
     },[theme])
     return (
         <>
-        <div className={`${bgcolor} flex flex-col justify-center items-center transition duration-300`}>
+        <div className={`${bgcolor} grid grid-col justify-center items-center transition duration-300`}>
             <Navbar theme={theme} setTheme={setTheme}/>
             <Hero theme={theme} />
             <Feature theme={theme}/>

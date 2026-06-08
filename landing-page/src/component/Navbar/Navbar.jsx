@@ -28,7 +28,7 @@ function Navbar({ theme, setTheme }) {
     <>
       <div className={`${bgcolor} transition duration-300 pt-3 w-full`}>
         <div
-          className={`flex ${textcolor} transition duration-300 py-2 w-full md:flex justify-evenly items-center`}
+          className={`grid-cols-1 flex ${textcolor} px-6 transition duration-300 py-2 w-full md:flex justify-between items-center`}
         >
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -70,7 +70,7 @@ function Navbar({ theme, setTheme }) {
           </ul>
 
           <div
-            className={`hidden md:flex items-center ${searchbgcolor} ${searchtextcolor} transition duration-300 rounded-2xl px-2 py-1 gap-2`}
+            className={`hidden lg:flex items-center ${searchbgcolor} ${searchtextcolor} transition duration-300 rounded-2xl px-2 py-1 gap-2`}
           >
             <input
               className="focus:outline-none font-medium"

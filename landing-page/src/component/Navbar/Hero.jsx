@@ -7,7 +7,7 @@ function Hero({ theme }) {
 
   return (
     <>
-      <div className={`${bordercolor} transition duration-300 grid grid-cols-1 mt-3 mx-5 md:mx-7 md:grid-cols-3 items-center md:mt-4 border rounded-lg `}>
+      <div className={`${bordercolor} transition duration-300 grid grow md:grow-0 grid-cols-1 mt-3 mx-5 md:mx-7 md:grid-cols-3 items-center md:mt-4 border rounded-lg `}>
         <div className="md:col-span-3 md:flex items-center">
             <h1
               className={`font-bold ${textcolor} mx-3 text-lg md:text-3xl text-center `}
