@@ -18,10 +18,7 @@ function App() {
         <div className={`${bgcolor} transition duration-300`}>
             <Navbar theme={theme} setTheme={setTheme}/>
             <Hero theme={theme} />
-            <Hero theme={theme} />
-            <Hero theme={theme} />
-            <Hero theme={theme} />
-            <Hero theme={theme} />
+            
         </div>
         </>
     )
