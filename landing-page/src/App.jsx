@@ -15,7 +15,7 @@ function App() {
     },[theme])
     return (
         <>
-        <div className={`${bgcolor} transition duration-300`}>
+        <div className={`${bgcolor} transition duration-300 h-screen`}>
             <Navbar theme={theme} setTheme={setTheme}/>
             <Hero theme={theme} />
             
