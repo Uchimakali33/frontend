@@ -9,8 +9,7 @@ import togglelight from "../../assets/light-mode.png";
 import { MdDarkMode } from "react-icons/md";
 import { MdLightMode } from "react-icons/md";
 
-
-import { FaSearch,FaShoppingCart} from "react-icons/fa";
+import { FaSearch, FaShoppingCart } from "react-icons/fa";
 
 function Navbar({ theme, setTheme }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +17,7 @@ function Navbar({ theme, setTheme }) {
     theme == "light" ? setTheme("dark") : setTheme("light");
   };
   const bgcolor = theme == "dark" ? "bg-white" : "bg-black";
-  
+
   const textcolor = theme == "dark" ? "text-black" : "text-white";
   const searchbgcolor = theme == "dark" ? "bg-black" : "bg-white";
   const searchtextcolor = theme == "dark" ? "text-white" : "text-black";
@@ -27,9 +26,7 @@ function Navbar({ theme, setTheme }) {
 
   return (
     <>
-      <div
-        className={`${bgcolor} transition duration-300 pt-3 w-full`}
-      >
+      <div className={`${bgcolor} transition duration-300 pt-3 w-full`}>
         <div
           className={`flex ${textcolor} transition duration-300 py-2 w-full md:flex justify-evenly items-center`}
         >
@@ -45,7 +42,7 @@ function Navbar({ theme, setTheme }) {
             )}
           </button>
           <div className="flex gap-2 font-bold text-mono text-lg shrink:min-w-100 self-end">
-            <FaShoppingCart className="w-6 h-6"/>
+            <FaShoppingCart className="w-6 h-6" />
             <h1 className={`font-bold`}>ShopNow</h1>
           </div>
 
@@ -80,19 +77,13 @@ function Navbar({ theme, setTheme }) {
               type="text"
               placeholder="Search"
             />
-            <FaSearch className="w-4 h-4"/>
+            <FaSearch className="w-4 h-4" />
           </div>
-          <div
-            className={`flex md:hidden items-center ${searchbgcolor} ${searchtextcolor} transition duration-300 rounded-2xl px-2 py-1 gap-2`}
-          >
-            <input
-              className="focus:outline-none font-medium"
-              type="text"
-              placeholder="Search"
-            />
-            <FaSearch className="w-5 h-5"/>
-          </div>
-          <MdLightMode className="w-7 h-7 hover:scale-105 transition duration-200" onClick={toggle_mode}/>
+
+          <MdLightMode
+            className="w-7 h-7 hover:scale-105 transition duration-200"
+            onClick={toggle_mode}
+          />
           <div
             className={`md:hidden ${isOpen ? "block" : "hidden"} rounded-xl absolute left-0 top-12 w-35 p-4 z-40 ${bgcolor}`}
           >
@@ -117,10 +108,20 @@ function Navbar({ theme, setTheme }) {
               >
                 About
               </li>
+              <li>
+                <div
+                  className={`flex md:hidden items-center ${searchbgcolor} ${searchtextcolor} transition duration-300 rounded-2xl px-2 py-1 gap-2`}
+                >
+                  <input
+                    className="focus:outline-none font-medium"
+                    type="text"
+                    placeholder="Search"
+                  />
+                  <FaSearch className="w-5 h-5" />
+                </div>
+              </li>
             </ul>
           </div>
-          
-          
         </div>
       </div>
     </>
