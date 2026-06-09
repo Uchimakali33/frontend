@@ -3,6 +3,7 @@ import Navbar from "./component/Navbar/Navbar"
 import Hero from "./component/Navbar/Hero"
 import Feature from "./component/Navbar/Feature"
 import { useEffect } from "react";
+import About from "./component/Navbar/About";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
             <Navbar theme={theme} setTheme={setTheme}/>
             <Hero theme={theme} />
             <Feature theme={theme}/>
+            <About theme={theme}/>
             
         </div>
         </>

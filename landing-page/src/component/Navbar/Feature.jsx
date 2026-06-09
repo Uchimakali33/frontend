@@ -10,7 +10,7 @@ function Feature({ theme }) {
   return (
     <>
       <div className={`mx-7 ${textColor}`}>
-        <h1 className={` text-center font-bold text-xl md:text-3xl my-3`}>Features</h1>
+        <h1 className={` text-center font-bold text-2xl md:text-4xl my-3`}>Features</h1>
         <div className={`grid-cols-1 gap-3 md:grid-cols-3 pb-3 md:flex justify-evenly`}>
           <div
             className={`border pb-3 ${bordercolor} md:grow shrink-0 md:shrink text-lg mb-5 md:text-xl rounded-lg`}
