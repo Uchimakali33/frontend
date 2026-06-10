@@ -15,7 +15,7 @@ function Feature({ theme }) {
           <div
             className={`border pb-3 ${bordercolor} md:grow shrink-0 md:shrink text-lg mb-5 md:text-xl rounded-lg`}
           >
-            <img className="md:w-120 w-150 h-50 md:h-80 rounded-lg mb-2" src={display} />
+            <img className="w-150 h-90 rounded-lg mb-2" src={display} />
             <h1 className="font-bold pb-2 pl-2 md:pl-4">Display</h1>
             <ul className="pl-6 text-md md:text-lg font-mono">
               <li>Amoled Display</li>
@@ -26,7 +26,7 @@ function Feature({ theme }) {
           <div
             className={`border ${bordercolor} md:grow shrink-0 md:shrink mb-5 text-lg md:text-xl rounded-lg`}
           >
-            <img className="md:w-120 w-150 h-50 md:h-80 rounded-lg mb-2" src={camera} />
+            <img className="w-150 h-90 rounded-lg mb-2" src={camera} />
             <h1 className="font-bold pb-2 pl-2 md:pl-4">Camera</h1>
 
             <ul className="pl-6 text-md md:text-lg font-mono">
@@ -38,7 +38,7 @@ function Feature({ theme }) {
           <div
             className={`border ${bordercolor} md:grow shrink-0 md:shrink mb-5 text-lg md:text-xl rounded-lg`}
           >
-            <img className="md:w-120 w-150 h-50 md:h-80 rounded-lg mb-2" src={processor} />
+            <img className="w-150 h-90 rounded-lg mb-2" src={processor} />
             <h1 className="font-bold pb-2 pl-2 md:pl-4">Processor</h1>
             <ul className="pl-6 text-md md:text-lg font-mono">
               <li>Octo Core Processor</li>
