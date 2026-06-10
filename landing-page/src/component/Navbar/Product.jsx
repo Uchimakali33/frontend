@@ -4,7 +4,7 @@ function Product({img,theme,name,cost,processor}){
     const bordercolor = theme == "dark" ? "border-gray-400" : "border-gray-800";
     return (
         <>
-        <div className={`${textColor} ${bordercolor} border-x border-b rounded-xl mt-2`}>
+        <div className={`${textColor} ${bordercolor} border-x border-b transition duration-300 rounded-xl mt-2`}>
             <img src={img} className="grow w-150 h-90 rounded-lg" alt=""/>
             <div className="p-2">
                 <h1 className="font-bold text-xl md:text-2xl">{name}</h1>
